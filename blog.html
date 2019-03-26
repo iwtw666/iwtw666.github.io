@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Will_the_Wizard's Blog</title>
+	<link rel="stylesheet" type="text/css" href="blog/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="blog/css/blog.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!--ssMenu CSS-->
+    <link rel="stylesheet" href="blog/css/ss-menu.css">
+    <link rel="stylesheet" href="blog/css/yjui.css">
+</head>
+<body>
+	<!--Start Side Sticky Menu-->
+	<nav class="ss-menu ">
+	 <ul>
+	    <li><a href="#1"><i class="fa fa-android"></i> Android Apps</a></li>
+	    <li><a href="#1"><i class="fa fa-apple"></i> Mac & iOS Apps</a></li>
+	    <li><a href="#1"><i class="fa fa-linux"></i> Linux Apps</a></li>
+	    <li><a href="#1"><i class="fa fa-windows"></i> Windows Apps</a></li>
+	    <li><a href="#1"><i class="fa fa-bitcoin"></i> Bitcoin</a></li>
+	    <li><a href="#1"><i class="fa fa-server"></i> Server</a></li>
+	    <li><a href="#1"><i class="fa fa-magic"></i> Magic Internet </a></li>
+	    <li><a href="#1"><i class="fa fa-microchip"></i> Hardware</a></li>
+	    <li><a href="#1"><i class="fa fa-newspaper-o"></i> Tech News</a></li>
+	 </ul>
+	</nav>
+	
+	<div class="blog-container">
+		<header class="blog-header">
+			<h1>Will_the_Wizard's Blog <span>Was mich nicht umbringt, macht mich stärker.</span></h1>
+			<div class="blog-links">
+				<a class="fa fa-github" href="https://github.com/iwtw666" title="Homepage" target="_blank"><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></a>
+				<a class="fa fa-mail-forward" href="https://iwtw666.github.io" title="Back" target="_blank"></a>
+			</div>
+		</header>
+		<main class="ss-main">
+         <article> 
+            <h2> Introduction  </h2>
+            <p> 1.Contents </p>
+            <pre class="prettyprint lang-html">
+    In this blog, you'll find some asesome apps for Andorid, iOS, Linux, Mac and Windows. 
+
+
+    Moreover, you can find methods to a free, uncensored and incognito Internet world, as well as the principle of GFW and the latest tech detail about it. 
+
+    
+    If you are really in the latest and newest tech news, the blog also could meet your requirement.
+</pre>
+            <p> 2. How to look for </p>
+            <pre class="prettyprint lang-html">
+    Firstly, you can use the side navagation bar to help you find the posts you like.
+    
+    
+    Also, you can use the search bar(not added yet) to search specific 'keywords' you are interested in.   
+</pre>     
+            <h2> Accessibility </h2>
+            <pre class="prettyprint lang-html">
+    If the side color that display is not suitable for your screen or you think it's harmful to your eyes, you can change it by the 'side theme picker' which is below.
+
+    Friendly reminder: the 'theme picker' will be on top in other pages.
+</pre>
+             <section class="theme-picker">
+                  <h2> Choose a side theme </h2>
+                  <p> The following are optional color schemes for side sticky menu. </p>
+                  <button class="set-default"> Restore  </button>
+                  <span class="red"> </span>
+                  <span class="yellow"> </span>
+                  <span class="blue"> </span>
+                  <span class="green"> </span>
+                  <span class="orange"> </span>
+                  <span class="brown"> </span>
+                  <span class="teal"> </span>
+                  <span class="purple"> </span>
+                  <div class="ad-unit">
+                  </div>
+            </section>
+         </article>
+       </main>
+	<script src="blog/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="blog/js/jquery.ss.menu.js"></script>
+	<script>
+	 $(document).ready(function(){
+	 
+	   $(".ss-menu").ssMenu();
+	 	
+	 }); 
+	 
+	</script>
+	<script>
+         $(function(){
+           var ssMenu = $(".ss-menu");
+           var theme = $(".theme-picker").find("span");
+         
+            $(theme).click(function(y){
+            
+              y = $(this).attr("class");
+              
+              $(ssMenu).removeClass().addClass("ss-menu " +y)
+              
+                 
+            });
+         
+            $(".set-default").click(function(){
+                   $(ssMenu).removeClass().addClass("ss-menu default");
+            
+            });
+         
+         });
+         
+      </script>
+</body>
+</html>
